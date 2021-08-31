@@ -13,9 +13,11 @@
     flex-direction: column;
     color: $branco;
 
-    p {
+
+    p, ul, li, a {
       color: $branco;
     }
+
 
     .first-footer-item {
       opacity: 0.7;
@@ -23,6 +25,7 @@
 
     .social-links {
       a {
+        
         &:not(:last-child) {
           margin-right: 25px;
         }
@@ -37,4 +40,15 @@
   top:5300px;
   left: 60%;
   z-index: -20;
+}
+
+// ------------------ RESPONSIVIDADE ----------------- //
+
+@media screen and (min-width: 1921px){
+  .footer {
+    background-image: url('../images/footer-bg.svg');
+  background-position-y: 1rem;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  }
 }
