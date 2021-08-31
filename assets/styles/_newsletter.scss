@@ -1,0 +1,85 @@
+.newsletter {
+  @include boundaries(auto);
+  margin-bottom: 10rem;
+  position: relative;
+
+  @include flexConfig(center);
+  flex-direction: column;
+
+  h4 {
+    color: $roxo;
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+    max-width: 55rem;
+    text-align: center;
+  }
+
+  .newsletter-group {
+    @include flexConfig(center);
+    position: absolute;
+    top: 200%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    .newsletter-bg {
+      z-index: -15;
+    }
+
+    form {
+      position: absolute;
+      display: flex;
+      .invisivel {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      .form-group {
+        display: inline-block;
+      }
+
+      input {
+        width: 40rem;
+        padding: 1.6rem 1.6rem;
+        font-size: 1.6rem;
+        color: $roxo;
+        border: 2px solid $cinza;
+        border-radius: 1rem;
+        outline: none;
+        background: transparent;
+        margin-right: 1.6rem;
+
+        &:focus,
+        &:valid {
+          border: 2px solid $roxo;
+        }
+
+        &:focus ~ label,
+        &:valid ~ label {
+          top: -50px;
+          left: 0;
+          color: $roxo;
+          font-size: 1.6rem;
+        }
+      }
+
+      label {
+        position: absolute;
+        top: 0;
+        left: 1.6rem;
+        padding: 1.6rem 0;
+        font-size: 1.6rem;
+        color: $cinza;
+        pointer-events: none;
+        transition: 0.5s;
+      }
+
+      .btn-principal {
+        border: none;
+        cursor: pointer;
+        width: 20rem;
+      }
+    }
+  }
+}

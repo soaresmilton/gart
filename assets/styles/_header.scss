@@ -1,0 +1,47 @@
+header {
+  .menu-container {
+
+    background: #fff;
+    padding: 1.6rem;
+    @include boxShadow(fraca);
+
+    @include flexConfig(evenly);
+
+    .logo {
+      width: 100%;
+      max-width: 18rem;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      flex: 1;
+
+      li {
+        margin: auto 1.6rem;
+
+        a {
+          color: $roxo;
+          transition: all ease 0.3s;
+          opacity: 0.75;
+          font-size: 1.8rem;
+
+          &:hover {
+            font-weight: bold;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .social-links {
+      background: linear-gradient(180deg, #e65232 0%, #f8a347 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      a {
+        margin: auto 1.6rem;
+      }
+    }
+  }
+}

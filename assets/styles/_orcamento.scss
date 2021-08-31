@@ -1,0 +1,75 @@
+.orcamentos {
+
+  background-image: url("../images/orcamentos-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 3.2rem;
+
+  height: 80vh;
+
+  .orcamentos-wrapper {
+    @include boundaries(true);
+
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 1.6rem;
+
+    h2,
+    p {
+      color: $branco;
+      @extend .textBlackShadow;
+    }
+
+    p {
+      line-height: 2.6rem;
+    }
+    .strong {
+      color: $roxo;
+    }
+  }
+
+  .cards {
+    @include boundaries(true);
+    @include flexConfig(around);
+
+    .card {
+      @include boxShadow(forte);
+      @include flexConfig(center);
+      flex-direction: column;
+      background: $branco;
+      border-radius: 1rem;
+      padding: 1.6rem;
+      height: 45rem;
+      width: 34.5rem;
+
+      .circulo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        @include flexConfig(center);
+
+        background: $amarelo;
+        color: $branco;
+
+        font-size: 3.2rem;
+      }
+
+      span,
+      h4 {
+        margin-top: 1.6rem;
+      }
+
+      span {
+        line-height: 2.6rem;
+        text-align: center;
+        width: 25rem;
+      }
+
+      .btn-principal {
+        width: 20rem;
+        margin-top: 1.6rem;
+      }
+    }
+  }
+}

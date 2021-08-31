@@ -1,0 +1,40 @@
+.footer {
+  @include flexConfig(around);
+  height: 50vh;
+
+  background-image: url('../images/footer-bg.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 1.6rem;
+
+  .footer-info {
+    @include flexConfig(space-evenly);
+    flex-direction: column;
+    color: $branco;
+
+    p {
+      color: $branco;
+    }
+
+    .first-footer-item {
+      opacity: 0.7;
+    }
+
+    .social-links {
+      a {
+        &:not(:last-child) {
+          margin-right: 25px;
+        }
+      }
+     
+    }
+  }
+}
+
+.details {
+  position: absolute;
+  top:5300px;
+  left: 60%;
+  z-index: -20;
+}

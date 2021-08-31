@@ -1,0 +1,112 @@
+.galeria {
+  padding: 3.2rem;
+  width: 100vw;
+
+  background-image: url("../images/Gart-icon-bg.svg");
+  background-color: rgba(248, 163, 71, 0.15);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @include flexConfig(center);
+  flex-direction: column;
+
+  .wrapper-galeria {
+    @include flexConfig(center);
+    flex-direction: column;
+    @include boundaries(false);
+    margin-bottom: 3.2rem;
+
+    .texto-galeria {
+      text-align: center;
+      line-height: 2.6rem;
+      width: 50%;
+      min-width: 300px;
+      margin: 1.6rem 0;
+    }
+
+    .btn-principal {
+      width: 325px;
+    }
+  }
+
+  .galeria-imagens {
+    @include flexConfig(center);
+    flex-wrap: wrap;
+    @include boundaries(true);
+   
+
+    img {
+      object-fit: cover;
+      transition: all 0.5s ease-out;
+      cursor: pointer;
+
+      justify-self: center;
+      align-self: center;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+
+  // .galeria-imagens {
+
+  //   @include boundaries(true);
+  //   width: 100vw;
+  //   height: 100vh;
+
+  //   img {
+  //     position: relative;
+  //     transition: 0.3s;
+  //     cursor: pointer;
+
+  //     &:hover {
+  //       transform: scale(1.1);
+  //     }
+
+  //     &#image1 {
+  //       left: -50px;
+  //     }
+
+  //     &#image2 {
+  //       left: 150px;
+  //       bottom: 150px;
+  //     }
+
+  //     &#image3 {
+  //       left: 600px;
+  //       bottom: 650px;
+  //     }
+
+  //     &#image4 {
+  //       left: 1050px;
+  //       bottom: 750px;
+  //     }
+
+  //     &#image5 {
+  //      bottom: 820px;
+  //      left: -100px;
+  //     }
+
+  //     &#image6 {
+  //       bottom: 1100px;
+  //       left: 300px;
+
+  //     }
+
+  //     &#image7 {
+  //       bottom: 1570px;
+  //       left: 600px;
+
+  //     }
+
+  //     &#image8 {
+  //       bottom: 1800px;
+  //       left: 975px;
+  //     }
+  //   }
+  // }
+
