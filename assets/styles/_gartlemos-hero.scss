@@ -148,7 +148,6 @@
 @media screen and (max-width: 1024px) {
   .gartlemos-hero {
     .gartlemos-container {
-
       h2 {
         font-size: 2.6rem;
       }
@@ -168,8 +167,6 @@
       justify-self: center;
       width: 92%;
       height: 35rem;
-
-
     }
   }
 }
@@ -197,7 +194,6 @@
       width: 75%;
 
       .carrossel-images {
-       
         .navigation-auto {
           top: 28rem;
         }
@@ -213,7 +209,6 @@
 @media screen and (max-width: 478px) {
   .gartlemos-hero {
     .gartlemos-container {
-
       h2 {
         font-size: 2.6rem;
       }
@@ -229,6 +224,56 @@
         .btn {
           font-size: 14px;
         }
+      }
+    }
+
+    .carrossel {
+      width: 100%;
+      height: 50rem;
+
+      .carrossel-images {
+        height: 100%;
+        display: flex;
+
+        .imagem {
+          width: 100%;
+          transition: 2s;
+
+          img {
+            height: 40rem;
+            border-radius: 15px;
+          }
+        }
+
+        .navigation-auto {
+          top: 22rem;
+        }
+      }
+
+      .navigation-manual {
+        top: 22rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .gartlemos-hero {
+    .carrossel {
+      .carrossel-images {
+        .imagem {
+          img {
+            height: 30rem;
+          }
+        }
+
+        .navigation-auto {
+          top: 20rem;
+        }
+      }
+
+      .navigation-manual {
+        top: 20rem;
       }
     }
   }
