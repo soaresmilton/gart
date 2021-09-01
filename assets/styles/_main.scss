@@ -82,7 +82,6 @@ $cinza: #C4C4C4;
 html {
   /* a cada 1rem será considera 10px */
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
 html,
@@ -92,6 +91,7 @@ body {
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
