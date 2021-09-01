@@ -104,19 +104,16 @@
   #radio1:checked ~ .navigation-auto .auto-btn1 {
     background: $branco;
     box-shadow: 0px 0px 10px 2px $branco;
-
   }
 
   #radio2:checked ~ .navigation-auto .auto-btn2 {
     background: $branco;
     box-shadow: 0px 0px 10px 2px $branco;
-
   }
 
   #radio3:checked ~ .navigation-auto .auto-btn3 {
     background: $branco;
     box-shadow: 0px 0px 10px 2px $branco;
-
   }
 }
 
@@ -143,6 +140,91 @@
 
       .navigation-manual {
         top: 30rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .gartlemos-hero {
+    .gartlemos-container {
+
+      h2 {
+        font-size: 2.6rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
+
+      .hero-btns {
+        .btn {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .carrossel {
+      justify-self: center;
+      width: 92%;
+      height: 35rem;
+
+
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gartlemos-hero {
+    display: flex;
+    flex-direction: column;
+
+    .gartlemos-container {
+      text-align: center;
+
+      .hero-btns {
+        .btn {
+          width: 20rem;
+        }
+      }
+    }
+
+    .carrossel {
+      order: -1;
+      margin: 2.4rem;
+
+      justify-self: center;
+      width: 75%;
+
+      .carrossel-images {
+       
+        .navigation-auto {
+          top: 28rem;
+        }
+      }
+
+      .navigation-manual {
+        top: 28rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .gartlemos-hero {
+    .gartlemos-container {
+
+      h2 {
+        font-size: 2.6rem;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      .hero-btns {
+        flex-direction: column;
+        text-align: left;
       }
     }
   }
