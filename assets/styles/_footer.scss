@@ -52,3 +52,12 @@
   // background-repeat: no-repeat;
   }
 }
+
+@media screen and (max-width: 1366px) {
+  .details {
+    position: absolute;
+    top:4500px;
+    left: 60%;
+    z-index: -20;
+  }
+}

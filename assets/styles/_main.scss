@@ -82,6 +82,7 @@ $cinza: #C4C4C4;
 html {
   /* a cada 1rem será considera 10px */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -133,6 +134,10 @@ h4 {
 
 ul {
   list-style: none;
+}
+
+textarea {
+  resize: none;
 }
 
 
