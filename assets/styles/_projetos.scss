@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
 
-
   .projetos-cover {
     background-image: url("../images/gart-lemos-1.jpg");
 
@@ -194,7 +193,7 @@
 
 // RESPONSIVIDADE
 
-@media screen and (max-width: 1366px) {
+@media (max-width: 1366px) {
   .projetos {
     .projetos-cover {
       height: 40vh;
@@ -237,6 +236,90 @@
           top: 35rem;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 1366px) {
+  .projetos {
+    article {
+      .carrossel-projetos {
+        width: 32rem;
+
+        .projetoImgs {
+          height: 42rem;
+
+          .image {
+            img {
+              height: 42rem;
+            }
+          }
+          .navigation-auto {
+            top: 35rem;
+          }
+        }
+
+        .navigation-manual {
+          top: 35rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) and (max-height: 896px) {
+  .projetos {
+    article {
+      height: 65vh;
+      @include flexConfig(center);
+      flex-direction: column;
+
+      .conteudo-projetos {
+        @include flexConfig(center);
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) and (max-height: 736px) {
+  .projetos {
+    article {
+      height: 75vh;
+    }
+  }
+}
+@media (max-width: 375px) and (max-height: 812px) {
+  .projetos {
+    .projetos-cover {
+     .projetos-cover-wrapper {
+       span {
+          line-height: 3rem;
+       }
+     }
+    }
+    article {
+      height: 80vh;
+
+      .carrossel-projetos {
+        margin-bottom: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) and (max-height: 812px) {
+  .projetos {
+    article {
+      height: 85vh;
+    }
+  }
+}
+
+@media (max-width: 360px) and (max-height: 640px) {
+  .projetos {
+    article {
+      height: 90vh;
     }
   }
 }

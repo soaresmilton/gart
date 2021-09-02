@@ -82,3 +82,76 @@
     margin-bottom: 32rem;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .orcamentos {
+    margin-bottom: 78rem;
+    height: 100vh;
+
+    .cards {
+      flex-direction: column;
+      .card:not(:last-child) {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 1366px) {
+  .orcamentos {
+    margin-bottom: 25rem;
+
+    .cards {
+      .card:not(:last-child) {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 768px) {
+  .orcamentos {
+    margin-bottom: 95rem;
+
+    .cards {
+      .card:not(:last-child) {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) and (max-height: 1024px) {
+  .orcamentos {
+    margin-bottom: 30rem;
+
+  }
+}
+
+@media (max-width: 414px) and (max-height: 896px) {
+  .orcamentos {
+    margin-bottom: 52rem;
+  }
+}
+@media (max-width: 414px) and (max-height: 736px) {
+  .orcamentos {
+    margin-bottom: 72rem;
+  }
+}
+@media (max-width: 375px) and (max-height: 812px) {
+  .orcamentos {
+    margin-bottom: 62rem;
+  }
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+  .orcamentos {
+    margin-bottom: 85rem;
+  }
+}
+
+@media (max-width: 360px) and (max-height: 640px) {
+  .orcamentos {
+    margin-bottom: 92rem;
+  }
+}

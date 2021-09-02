@@ -37,4 +37,3 @@ function fecharModal(event) {
     original.classList.remove('open');
   }
 }
-
