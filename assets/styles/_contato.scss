@@ -17,6 +17,10 @@
     }
   }
 
+  p {
+    margin-bottom: 2.4rem;
+  }
+
   .contact-wrapper {
     @include boundaries();
     display: grid;
@@ -156,12 +160,161 @@
 
 // RESPONSIVIDADE
 
-@media screen and (max-width: 1366px) {
+@media (max-width: 1440px) and (max-height: 720px) {
   .contato {
-    margin-bottom: 18rem;
+    position: static;
+    margin: 15rem 0;
 
     .contact-wrapper {
-      margin-top: 2.4rem;
+      margin-top: 3.2rem;
+    }
+  }
+}
+
+@media (max-width: 1366px) and (max-height: 768px) {
+  .contato {
+    margin-bottom: 18rem;
+  }
+}
+@media (max-width: 1024px) and (max-height: 1366px) {
+  .contato {
+    height: 100%;
+    margin: 20rem 0;
+
+    background-size: cover;
+
+    h2 {
+      margin-top: 25rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .contact-wrapper {
+      @include flexConfig(center);
+      flex-direction: column;
+      margin-top: 3.2rem;
+      .infos {
+        width: 80%;
+        margin-bottom: 2.4rem;
+      }
+
+      #contact-form {
+        width: 80%;
+        position: relative;
+        left: 50%;
+        transform: translatex(-55%);
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 768px) {
+  .contato {
+    height: 100%;
+    margin: 115rem 0 55rem 0;
+
+    background-size: cover;
+    position: static;
+
+    .contact-wrapper {
+      @include flexConfig(center);
+      flex-direction: column;
+      margin-top: 3.2rem;
+      .infos {
+        width: 75%;
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) and (max-height: 1024px) {
+  .contato {
+    margin: 0rem 0 30rem 0;
+  }
+}
+
+@media (max-width: 414px) and (max-height: 896px) {
+  .contato {
+    position: static;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    margin-top: 500px;
+
+    .contact-wrapper {
+      margin-bottom: 15px;
+      #contact-form {
+        position: relative;
+        left: 235px;
+        top: -35px;
+        transform: translatex(-50%);
+        width: 100%;
+
+        .form-group {
+          width: 85%;
+
+          .btn-principal {
+            float: none;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) and (max-height: 736px) {
+  .contato {
+    margin: 735px 0 350px 0;
+    .contact-wrapper {
+      .infos {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) and (max-height: 812px) {
+  .contato {
+    margin: 635px 0 330px 0;
+
+    .contact-wrapper {
+      .infos {
+        width: 90%;
+      }
+
+      #contact-form {
+        width: 100%;
+        left: 220px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+  .contato {
+    margin: 850px 0 365px 0;
+  }
+}
+
+@media (max-width: 360px) and (max-height: 640px) {
+  .contato {
+    margin: 900px 0 380px 0;
+    .contact-wrapper {
+      .infos {
+        width: 90%;
+      }
+
+      #contact-form {
+        width: 100%;
+        left: 210px;
+      }
     }
   }
 }
