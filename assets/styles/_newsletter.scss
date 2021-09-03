@@ -84,11 +84,84 @@
   }
 }
 
-
 // ------------------ RESPONSIVIDADE ----------------- //
 
-@media screen and (min-width: 1921px){
+@media screen and (min-width: 1921px) {
   .newsletter {
-      margin-bottom: 15rem;
+    margin-bottom: 15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter {
+    .newsletter-group {
+      .newsletter-bg {
+        svg {
+          width: 650px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .newsletter {
+    position: static;
+    margin-bottom: 0;
+    margin-top: 32px;
+    h4 {
+      margin-bottom: 0;
+    }
+    .newsletter-group {
+      position: static;
+      transform: none;
+
+      .newsletter-bg {
+        display: none;
+        svg {
+          display: none;
+        }
+      }
+
+      form {
+        position: static;
+
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        background: $branco;
+        border-radius: 1rem;
+        margin: 32px 0;
+        @include boxShadow(contorno);
+
+        padding: 1.6rem;
+
+        .form-group {
+          position: relative;
+
+          input {
+            margin-bottom: 1rem;
+          }
+          label {
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .newsletter {
+    .newsletter-group {
+      form {
+        width: 100%;
+
+        input {
+          width: 300px;
+        }
+      }
+    }
   }
 }

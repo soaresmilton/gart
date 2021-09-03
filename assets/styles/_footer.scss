@@ -35,29 +35,15 @@
   }
 }
 
-.details {
-  position: absolute;
-  top:5100px;
-  left: 55%;
-  z-index: -20;
-}
-
 // ------------------ RESPONSIVIDADE ----------------- //
 
 @media screen and (min-width: 1921px){
   .footer {
     background-image: url('../images/footer-bg.svg');
   background-position-y: 1rem;
-  // background-size: cover;
-  // background-repeat: no-repeat;
   }
 }
 
-@media screen and (max-width: 1366px) {
-  .details {
-    position: absolute;
-    top:4500px;
-    left: 60%;
-    z-index: -20;
-  }
+@media (max-width: 1440px) {
+
 }
