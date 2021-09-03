@@ -2,7 +2,7 @@
   @include flexConfig(around);
   height: 50vh;
 
-  background-image: url('../images/footer-bg.svg');
+  background-image: url("../images/footer-bg.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,11 +13,12 @@
     flex-direction: column;
     color: $branco;
 
-
-    p, ul, li, a {
+    p,
+    ul,
+    li,
+    a {
       color: $branco;
     }
-
 
     .first-footer-item {
       opacity: 0.7;
@@ -25,25 +26,31 @@
 
     .social-links {
       a {
-        
         &:not(:last-child) {
           margin-right: 25px;
         }
       }
-     
     }
   }
 }
 
 // ------------------ RESPONSIVIDADE ----------------- //
 
-@media screen and (min-width: 1921px){
+@media screen and (min-width: 1921px) {
   .footer {
-    background-image: url('../images/footer-bg.svg');
-  background-position-y: 1rem;
+    background-image: url("../images/footer-bg.svg");
+    background-position-y: 1rem;
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    height: 100%;
 
+    .footer-info {
+      margin-top: 56px;
+      padding: 1.6rem;
+    }
+  }
 }
