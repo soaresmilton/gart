@@ -10,7 +10,6 @@
 
   margin-bottom: 2.4rem;
 
-
   h2 {
     color: $roxo;
     span.contact {
@@ -26,7 +25,6 @@
     @include boundaries();
     display: grid;
     grid-template-columns: 45% 55%;
-  
 
     .infos,
     #contact-form {
@@ -161,13 +159,11 @@
 
 // RESPONSIVIDADE
 
-
 @media (max-width: 474px) {
   .contato {
     height: 100%;
 
-  
-    .contact-wrapper  {
+    .contact-wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -178,11 +174,11 @@
         width: 85%;
       }
 
-      #contact-form  {
+      #contact-form {
         margin-left: 0;
         margin-top: -24px;
 
-        .form-group  {
+        .form-group {
           .btn-principal {
             float: none;
             margin: auto;
@@ -194,8 +190,7 @@
   }
 }
 
-
-@media (max-width: 376px) {
+@media (max-width: 414px) {
   .contato {
     .contact-wrapper {
       #contact-form {
