@@ -51,3 +51,14 @@
   }
 }
 
+@media(max-width: 478px) {
+  .galeria {
+    .galeria-imagens {
+     
+      img {
+        width: 100%;
+      }
+     
+    }
+  }
+}

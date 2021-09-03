@@ -9,10 +9,19 @@ previews.forEach(preview => {
     abrirModal();
 
     const originalSrc = preview.getAttribute('data-original');
-    original.src = `./assets/images/${originalSrc}`;
+    const originalSrcSmallScreen = preview.getAttribute('data-small-screen');
 
+    const windowScreenSize = window.screen.width;
+
+    if (windowScreenSize <= 478) {
+      original.src = `./assets/images/${originalSrcSmallScreen}`;
+
+    } else {
+      original.src = `./assets/images/${originalSrc}`;
+    }
     const altText = preview.alt;
     caption.textContent = altText;
+
   })
 });
 

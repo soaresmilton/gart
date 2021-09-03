@@ -43,5 +43,12 @@
     line-height: 2.6rem;
     text-align: center;
   }
-  
+}
+
+@media (max-width: 474px) {
+  .modal {
+    .large-image {
+      height: auto;
+    }
+  }
 }
