@@ -12,6 +12,8 @@
 
   flex-direction: column;
 
+  color: #fff;
+
 
   .profile {
     
@@ -77,7 +79,7 @@
         border-radius: 1rem;
 
         transition: .3s;
-        color: &branco;
+        color: #fff;
 
         &:hover {
           background: $rosa;
@@ -87,7 +89,7 @@
         }
 
         &:visited {
-          color: $branco;
+          color: #fff;
         }
       }
 

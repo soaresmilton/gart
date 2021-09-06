@@ -1463,6 +1463,7 @@ header .menu-container .menu-section.on .social-links {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  color: #fff;
 }
 .container .profile {
   display: flex;
@@ -1521,7 +1522,7 @@ header .menu-container .menu-section.on .social-links {
   background: #4a0d44;
   border-radius: 1rem;
   transition: 0.3s;
-  color: .container .content_container .social-link-group a branco;
+  color: #fff;
 }
 .container .content_container .social-link-group a:hover {
   background: #d93984;
