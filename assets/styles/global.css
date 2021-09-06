@@ -1521,11 +1521,15 @@ header .menu-container .menu-section.on .social-links {
   background: #4a0d44;
   border-radius: 1rem;
   transition: 0.3s;
+  color: .container .content_container .social-link-group a branco;
 }
 .container .content_container .social-link-group a:hover {
   background: #d93984;
   box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.25);
   transform: scale(1.05);
+}
+.container .content_container .social-link-group a:visited {
+  color: #fff;
 }
 .container .content_container .social-link-group .group-laranja {
   background: #e65232;

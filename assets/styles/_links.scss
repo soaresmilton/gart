@@ -77,12 +77,17 @@
         border-radius: 1rem;
 
         transition: .3s;
+        color: &branco;
 
         &:hover {
           background: $rosa;
 
           @include boxShadow(contorno);
           transform: scale(1.05);
+        }
+
+        &:visited {
+          color: $branco;
         }
       }
 
